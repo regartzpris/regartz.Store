@@ -1,14 +1,14 @@
 import React from 'react';
 
-import HomePage from './pages/home-page/HomePage';
+import HomePage from './pages/homepage/homepage';
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
-    <HomePage />
+      <HomePage />
 
     </div>
   );
