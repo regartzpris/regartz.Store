@@ -7,12 +7,12 @@ import './homepage.stayles.scss'
 
 
 const HomePage = () => (
-    <div className='container'>
+   
         <div className='homepage'>
             <Directory />
         </div>
 
-    </div>
+    
 )
 
 
