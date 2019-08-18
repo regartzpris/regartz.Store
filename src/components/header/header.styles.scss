@@ -4,9 +4,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+
+
     
     
-    
+ 
   
     .logo-container {
       padding: 10px;
@@ -14,6 +16,18 @@
      font-family: 'Niconne', cursive;
      text-decoration: none;
      font-weight: bold;
+
+
+     &:hover{
+
+        color:black;
+
+     }
+   
+    
+ 
+  
+
     }
   
     .options {
@@ -27,6 +41,7 @@
       .option {
         padding: 10px 15px;
         text-decoration: none;
+        cursor: pointer;
       }
     }
   }
