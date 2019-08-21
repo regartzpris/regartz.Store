@@ -10,7 +10,7 @@ import '../header/header.styles.scss';
 
 
 
-const Header=({currentUser})=>(
+const Header=({currentUser,hidden})=>(
     <div className='header'>
     <Link className='logo-container' to='/'>
         RegartzStore
@@ -36,15 +36,19 @@ const Header=({currentUser})=>(
       <CartIcon />
 
     </div>
-    <Cart />
+    {
+      hidden ? null :   <Cart />
+    }
+  
 
 </div>
 
 )
    
 
-const mapStateToProps=state=>({
-  currentUser:state.user.currentUser
+const mapStateToProps=({user:{currentUser},cart:{hidden}})=>({
+  currentUser,
+  hidden
 })
 
 export default connect (mapStateToProps,null)(Header);
