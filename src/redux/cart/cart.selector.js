@@ -38,3 +38,9 @@ export const SelectCartItemsCount = createSelector(
     //The return value of the function is stored in an accumulator (result/total).
     //Note: reduce() does not execute the function for array elements without values.
     // Note: this method does not change the original array. -- w3school--
+
+
+    export const selectCartTotal= createSelector(
+        [selectCartItems],
+        cartItems => cartItems.reduce((accumulatedQuantity, cartItem) => accumulatedQuantity + cartItem.quantity * cartItem.price, 0)
+    )
