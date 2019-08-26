@@ -40,8 +40,8 @@ class SignIn extends Component {
         const { value, name } = event.target;
 
         this.setState({ [name]: value });
-        console.log(this.state.email);
-        console.log(this.state.password);
+        // console.log(this.state.email);
+        // console.log(this.state.password);
 
     }
 
