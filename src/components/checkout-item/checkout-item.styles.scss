@@ -1,3 +1,5 @@
+
+
 .checkout-item {
     width: 100%;
     display: flex;
@@ -6,7 +8,8 @@
     padding: 15px 0;
     font-size: 20px;
     align-items: center;
-  
+
+
     .image-container {
       width: 23%;
       padding-right: 15px;
@@ -20,6 +23,10 @@
     .quantity,
     .price {
       width: 23%;
+
+
+      
+      
     }
   
     .quantity {
@@ -39,5 +46,27 @@
       padding-left: 12px;
       cursor: pointer;
     }
+
+    // Responsive Design ----------------
+
+	@media (min-width: 425px) and (max-width: 599px) {
+		.name, .quantity, .price {
+			font-size: 1.3em;
+		}
+	}
+
+	@media (min-width: 600px) and (max-width: 767px) {
+		width: 75%;
+	}
+	
+	@media (min-width: 768px) and (max-width: 1023px) {
+		width: 75%;
+		font-size: 1.2em
+	}
+
+	@media(min-width: 1024px) {
+		width: 45%;
+		font-size: 1.2em;
+	}
   }
   
