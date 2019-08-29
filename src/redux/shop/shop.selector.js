@@ -20,7 +20,7 @@ export const selectShopItems = createSelector(
 
 export const selectCollectionsForPreview = createSelector(
     [selectShopItems],
-    collections => Object.keys(collections).map(key => collections[key])
+    collections => collections ? Object.keys(collections).map(key => collections[key]) : []
 
 );
 
@@ -34,5 +34,5 @@ export const selectCollectionsForPreview = createSelector(
 
 export const selectCollection = collcetionUrlParam => createSelector(
     [selectShopItems],
-    collections => collections[collcetionUrlParam]
+    collections =>(collections ?  collections[collcetionUrlParam] : null)
 );

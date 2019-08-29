@@ -25,12 +25,8 @@ export const HeaderContainer = styled.div`
         padding: 10px;
         margin-bottom: 20px;
       }
-
     
-
-
-    
-`
+`;
 
 export const LogoContainer = styled(Link)`
     padding: 4px;
@@ -43,10 +39,6 @@ export const LogoContainer = styled(Link)`
        :hover {
           color:black;
           text-decoration:none;
-
-
-         
-
           }
 
           @media screen and (max-width: 800px) {
@@ -72,10 +64,6 @@ export const OptionsContainer = styled.div`
         font-size:10px;
         padding: 0;
 
-
-    
-    
-
 `;
 
 export const OptionLink = styled(Link)`
@@ -83,7 +71,10 @@ export const OptionLink = styled(Link)`
     
     @media screen and (max-width: 800px) {
         width: 80%;
+        
       }
+
+      
 `;
 
 
@@ -93,6 +84,7 @@ export const OptionDiv = styled.div`
 
     @media screen and (max-width: 800px) {
         width: 80%;
+        font-size:10px;
       }
     
 `;
